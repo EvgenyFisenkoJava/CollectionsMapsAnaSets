@@ -22,8 +22,15 @@ public class Main {
         List<Integer> numsEven = new ArrayList<>(List.of(1, 1, 2, 3, 4, 4, 5, 5, 6, 7));
         Set<Integer> set = new LinkedHashSet<>(numsEven);
         numsEven = new ArrayList<>(set);
+        for (Integer num : numsEven) {
+            if (num % 2 == 0) {
 
-        System.out.print(numsEven);
+                System.out.print(num);
+            }
+
+        }
+
+
 
         System.out.println();
         System.out.println("задание 3");
